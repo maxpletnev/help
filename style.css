@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+     font-family: 'Poppins', sans-serif;
+}
+
+.page_4{
+    width: 1923px;
+    margin: 0 auto;
+}
+
+.latest{
+    padding-top: 103px;
+    padding-left: 389px;
+}
+
+.featured{
+    margin-top:-34px;
+}
+
+.table{
+    border-spacing: 67px;
+    padding-left: 340px;
+    float: left;
+}
+
+.td_date{
+    border: 1px solid #e8e8e8;
+    background-color: #f7f7f7;
+    height: 139px;
+    width: 98px;
+    text-align: center;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+}
+
+.td_date>h3{
+    color: #000000;
+    font-family: Poppins;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 48px;
+}
+
+.td_date>h5{
+    color: #9e9e9e;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.td_text{
+    width: 308px;
+    height: 74px;
+}
+
+.td_text>h3{
+    color: #f44336;
+    font-family: "Roboto Condensed";
+    font-size: 16px;
+}
+
+.td_text>h5{
+    color: #9e9e9e;
+    font-family: "Roboto Condensed";
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+    
+.wrapper{
+   color: #000000;
+   font-family: "Roboto Condensed";
+   font-weight: bold;
+   line-height: 48px; 
+}
+
+.xpandable-block{
+   height: 1px;
+   overflow: hidden;
+   order: 0;
+   width: 534px;
+   font-weight: 300;
+   line-height: 24px;
+   color: #000000;
+   font-size: 12px;
+}
+
+.xpand-button{
+   order: 1;
+}
+
+input[type="checkbox"]{
+   display: none;
+}
+
+input[type="checkbox"]:checked + .xpandable-block{
+   height: auto;
+}
+
+label {
+   order: 1;
+   color: black;
+   text-decoration: underline;
+   font-size: 18px;
+   cursor: pointer;
+   border: 1px solid
+}
