@@ -3,31 +3,31 @@
     padding: 0;
 }
 
-body{
-     font-family: 'Poppins', sans-serif;
+body {
+    font-family: 'Poppins', sans-serif;
 }
 
-.page_4{
+.page_4 {
     width: 1923px;
     margin: 0 auto;
 }
 
-.latest{
+.latest {
     padding-top: 103px;
     padding-left: 389px;
 }
 
-.featured{
-    margin-top:-34px;
+.featured {
+    margin-top: -34px;
 }
 
-.table{
+.table {
     border-spacing: 67px;
     padding-left: 340px;
     float: left;
 }
 
-.td_date{
+.td_date {
     border: 1px solid #e8e8e8;
     background-color: #f7f7f7;
     height: 139px;
@@ -39,7 +39,7 @@ body{
     border-top-right-radius: 60px;
 }
 
-.td_date>h3{
+.td_date > h3 {
     color: #000000;
     font-family: Poppins;
     font-size: 32px;
@@ -47,67 +47,131 @@ body{
     line-height: 48px;
 }
 
-.td_date>h5{
+.td_date > h5 {
     color: #9e9e9e;
     font-family: Poppins;
     font-size: 14px;
     font-weight: 500;
 }
 
-.td_text{
+.td_text {
     width: 308px;
     height: 74px;
 }
 
-.td_text>h3{
+.td_text > h3 {
     color: #f44336;
     font-family: "Roboto Condensed";
     font-size: 16px;
 }
 
-.td_text>h5{
+.td_text > h5 {
     color: #9e9e9e;
     font-family: "Roboto Condensed";
     font-size: 14px;
     font-weight: 300;
     line-height: 24px;
 }
-    
-.wrapper{
-   color: #000000;
-   font-family: "Roboto Condensed";
-   font-weight: bold;
-   line-height: 48px; 
+
+.wrapper {
+    color: #000000;
+    font-family: "Roboto Condensed";
+    font-weight: bold;
+    line-height: 48px;
 }
 
-.xpandable-block{
-   height: 1px;
-   overflow: hidden;
-   order: 0;
-   width: 534px;
-   font-weight: 300;
-   line-height: 24px;
-   color: #000000;
-   font-size: 12px;
+.xpandable-block {
+    height: 1px;
+    overflow: hidden;
+    order: 0;
+    width: 534px;
+    font-weight: 300;
+    line-height: 24px;
+    color: #000000;
+    font-size: 12px;
 }
 
-.xpand-button{
-   order: 1;
+.xpand-button {
+    order: 1;
 }
 
-input[type="checkbox"]{
-   display: none;
+input[type="checkbox"] {
+    display: none;
 }
 
-input[type="checkbox"]:checked + .xpandable-block{
-   height: auto;
+input[type="checkbox"]:checked + .xpandable-block {
+    height: auto;
 }
 
 label {
-   order: 1;
-   color: black;
-   text-decoration: underline;
-   font-size: 18px;
-   cursor: pointer;
-   border: 1px solid
+    order: 1;
+    color: black;
+    text-decoration: underline;
+    font-size: 18px;
+    cursor: pointer;
+    border: 1px solid
 }
+
+/* Карусель */
+.carousel {
+    position: relative;
+    float: right;
+    margin-right: 420px;
+    width: 198px;
+    padding: 10px 40px;
+}
+
+.carousel img {
+    width: 180px;
+    height: 130px;
+    /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+    display: block;
+}
+
+.arrow {
+    position: absolute;
+    top: 60px;
+    padding: 0;
+    background: #ddd;
+    font-size: 24px;
+    line-height: 24px;
+    color: #444;
+    display: block;
+}
+
+.arrow:focus {
+    outline: none;
+}
+
+.arrow:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+
+.prev {
+    left: 7px;
+}
+
+.next {
+    right: 35px;
+}
+
+.gallery {
+    width: 170px;
+    overflow: hidden;
+}
+
+.gallery ul {
+    height: 130px;
+    width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+    /* http://davidwalsh.name/remove-whitespace-inline-block */
+    font-size: 0;
+}
+
+.gallery li {
+    display: inline-block;
