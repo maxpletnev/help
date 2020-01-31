@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <style>
+    #img {
+      position: relative;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <img id="img" src="iphone.jpg">
+
+     <script>
+    var answer = prompt('Введите значение скорости автомобиля: ');
+    img.onclick = function() {
+      let start = Date.now();
+
+      let timer = setInterval(function() {
+        let timePassed = Date.now() - start;
+
+        img.style.left = timePassed / answer + 'px';
+
+        if (timePassed > 5000) clearInterval(timer);
+
+      }, 20);
+    }
+  </script>
+
+
+</body>
+
+</html>
